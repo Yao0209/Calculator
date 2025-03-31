@@ -17,37 +17,17 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btnOne_Click(object sender, EventArgs e) // 1
         {
 
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void btnTwo_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnNine_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSeven_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnEight_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDivide_Click(object sender, EventArgs e)
+        private void btnThree_Click(object sender, EventArgs e)
         {
 
         }
@@ -67,6 +47,41 @@ namespace Calculator
 
         }
 
+        private void btnSeven_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEight_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNine_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnZero_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDivide_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnPlus_Click(object sender, EventArgs e)
         {
 
@@ -77,22 +92,7 @@ namespace Calculator
 
         }
 
-        private void btnThree_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnTwo_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnDot_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnZero_Click(object sender, EventArgs e)
         {
 
         }
