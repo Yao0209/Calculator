@@ -52,7 +52,7 @@ namespace Calculator
             txtNumber.Text = txtNumber.Text + "7";
         }
 
-        private void btnEight_Click(object sender, EventArgs e)
+        private void btnEight_Click_1(object sender, EventArgs e)
         {
             txtNumber.Text = txtNumber.Text + "8";
         }
@@ -65,11 +65,6 @@ namespace Calculator
         private void btnZero_Click(object sender, EventArgs e)
         {
             txtNumber.Text = txtNumber.Text + "0";
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnClear_Click(object sender, EventArgs e)

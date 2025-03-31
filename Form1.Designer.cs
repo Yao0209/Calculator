@@ -66,8 +66,8 @@
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.Size = new System.Drawing.Size(990, 93);
             this.txtNumber.TabIndex = 1;
+            this.txtNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtNumber.Click += new System.EventHandler(this.txtNumber_Click);
-            this.txtNumber.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnSeven
             // 
@@ -89,7 +89,7 @@
             this.btnEight.TabIndex = 3;
             this.btnEight.Text = "8";
             this.btnEight.UseVisualStyleBackColor = true;
-            this.btnEight.Click += new System.EventHandler(this.btnEight_Click);
+            this.btnEight.Click += new System.EventHandler(this.btnEight_Click_1);
             // 
             // btnNine
             // 
