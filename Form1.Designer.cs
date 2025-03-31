@@ -61,6 +61,7 @@
             // 
             // txtNumber
             // 
+            this.txtNumber.AcceptsTab = true;
             this.txtNumber.Font = new System.Drawing.Font("微軟正黑體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtNumber.Location = new System.Drawing.Point(22, 70);
             this.txtNumber.Name = "txtNumber";
