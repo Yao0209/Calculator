@@ -62,10 +62,9 @@
             // txtNumber
             // 
             this.txtNumber.Font = new System.Drawing.Font("微軟正黑體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtNumber.Location = new System.Drawing.Point(12, 34);
-            this.txtNumber.Multiline = true;
+            this.txtNumber.Location = new System.Drawing.Point(22, 70);
             this.txtNumber.Name = "txtNumber";
-            this.txtNumber.Size = new System.Drawing.Size(990, 138);
+            this.txtNumber.Size = new System.Drawing.Size(990, 93);
             this.txtNumber.TabIndex = 1;
             this.txtNumber.Click += new System.EventHandler(this.txtNumber_Click);
             this.txtNumber.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
