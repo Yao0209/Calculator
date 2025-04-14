@@ -17,9 +17,17 @@ namespace Calculator
             InitializeComponent();
         }
 
+        // 按下數字鍵1的效果
         private void btnOne_Click(object sender, EventArgs e) 
         {
-            txtNumber.Text = txtNumber.Text + "1";
+            // 判斷當前顯示的數字是否為0，則清空顯示框
+            if (txtNumber.Text == "0")
+            {
+                txtNumber.Text = "";
+            }
+
+            txtNumber.Text = txtNumber.Text + "1";  
+            // txtNumber.Text += "1";  // 上面和下面的寫法是一樣的
         }
 
         private void btnTwo_Click(object sender, EventArgs e)
