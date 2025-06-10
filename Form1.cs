@@ -31,8 +31,8 @@ namespace Calculator
                 txtNumber.Text = "";
             }
 
-            txtNumber.Text = txtNumber.Text + "1";
-            // txtNumber.Text += "1";  // 上面和下面的寫法是一樣的
+            // txtNumber.Text = txtNumber.Text + "1";
+            txtNumber.Text += "1";  // 上面和下面的寫法是一樣的
 
             /*
             // 寫法二
@@ -102,7 +102,8 @@ namespace Calculator
         private void btnZero_Click(object sender, EventArgs e)
         {
             if (txtNumber.Text == "0")
-                txtNumber.Text = txtNumber.Text + "0";
+                txtNumber.Text = "";
+            txtNumber.Text = txtNumber.Text + "0";
         }
 
         private void btnClear_Click(object sender, EventArgs e)
