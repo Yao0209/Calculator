@@ -17,6 +17,10 @@ namespace Calculator
             InitializeComponent();
         }
 
+        // 全域變數
+        float firstNumber, secondNumber; // firstNumber 儲存第一個數字，secondNumber 儲存第二個數字
+        int operators = -1; // 記錄選擇哪一種運算符號？0:加、1:減、2:乘、3:除、-1:重新設定
+
         // 按下數字鍵1的效果
         private void btnOne_Click(object sender, EventArgs e) 
         {
