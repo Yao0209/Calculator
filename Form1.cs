@@ -181,6 +181,15 @@ namespace Calculator
             operators = -1;
         }
 
+        private void btnPercent_Click(object sender, EventArgs e)
+        {
+            if (float.TryParse(txtNumber.Text, out float number))
+            {
+                txtNumber.Text = (number / 100).ToString();
+            }
+        }
+
+
         private void txtNumber_Click(object sender, EventArgs e)
         {
 
