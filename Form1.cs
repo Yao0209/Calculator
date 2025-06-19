@@ -181,6 +181,7 @@ namespace Calculator
             operators = -1;
         }
 
+        //百分比鍵
         private void btnPercent_Click(object sender, EventArgs e)
         {
             if (float.TryParse(txtNumber.Text, out float number))
@@ -189,6 +190,7 @@ namespace Calculator
             }
         }
 
+        //倒退鍵，倒退到最後一位時會呈現0
         private void btnBack_Click(object sender, EventArgs e)
         {
             if (txtNumber.Text.Length > 0)
