@@ -108,7 +108,12 @@ namespace Calculator
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            txtNumber.Text = "0";
 
+            // 重置所有全域變數，設定為初始值，以便重新計算
+            firstNumber = 0f;
+            secondNumber = 0f;
+            operators = -1;
         }
 
         // 按下選擇「除」按鍵
