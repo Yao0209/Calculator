@@ -137,7 +137,20 @@ namespace Calculator
 
         private void btnDot_Click(object sender, EventArgs e)
         {
+            // 確認輸入文字框中完全沒有小數點，共兩種寫法，這裡用方法一
 
+            //使用IndexOf() 方法的語法(方法一:老師寫法)：
+            //要搜索的原始字串.IndexOf(要尋找的字串, 開始搜索的位置, 搜索結束的位置)
+            if (txtNumber.Text.IndexOf(".") == -1)  //IndexOf("."):有小數點就回傳小數點位置，沒有就回傳 -1(有索引概念)
+                txtNumber.Text = txtNumber.Text + ".";
+
+            /*
+            //使用Contains() 方法的語法(方法二)：
+            if (txtNumber.Text.Contains(".") == false)  //Text.Contains("."):有無小數點就回傳 True\Fluse
+            {
+                txtNumber.Text += txtNumber.Text + "."; 
+            }
+            */
         }
 
         private void btnEqual_Click(object sender, EventArgs e)
