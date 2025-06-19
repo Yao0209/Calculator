@@ -111,19 +111,28 @@ namespace Calculator
 
         }
 
+        // 按下選擇「除」按鍵
         private void btnDivide_Click(object sender, EventArgs e)
         {
-
+            firstNumber = Convert.ToSingle(txtNumber.Text);
+            txtNumber.Text = "0";
+            operators = 3; //選擇「除」號
         }
 
+        // 按下選擇「乘」按鍵
         private void btnPlus_Click(object sender, EventArgs e)
         {
-
+            firstNumber = Convert.ToSingle(txtNumber.Text);
+            txtNumber.Text = "0";
+            operators = 2; //選擇「乘」號
         }
 
+        // 按下選擇「減」按鍵
         private void btnMinus_Click(object sender, EventArgs e)
         {
-
+            firstNumber = Convert.ToSingle(txtNumber.Text);
+            txtNumber.Text = "0";
+            operators = 1; //選擇「減」號
         }
 
         private void btnDot_Click(object sender, EventArgs e)
@@ -136,9 +145,12 @@ namespace Calculator
 
         }
 
+        // 按下選擇「加」按鍵
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            firstNumber = Convert.ToSingle(txtNumber.Text); //將輸入文字框轉換成浮點數，存入第一個數字的全域變數
+            txtNumber.Text = "0"; //重新將輸入文字框重新設定為0
+            operators = 0; //選擇「加」號
         }
 
         private void txtNumber_Click(object sender, EventArgs e)
