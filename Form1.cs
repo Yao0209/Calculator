@@ -24,86 +24,59 @@ namespace Calculator
         // 按下數字鍵1的效果
         private void btnOne_Click(object sender, EventArgs e) 
         {
-            // 判斷當前顯示的數字是否為0，則清空顯示框
-            // 寫法一
-            if (txtNumber.Text == "0")
-            {
-                txtNumber.Text = "";
-            }
-
-            // txtNumber.Text = txtNumber.Text + "1";
-            txtNumber.Text += "1";  // 上面和下面的寫法是一樣的
-
-            /*
-            // 寫法二
-            if (txtNumber.Text == "0")
-                txtNumber.Text = ""; // 如果你的判斷式簡單到只有一行程式，可以把 { } 大刮號省略掉
-            txtNumber.Text += "1";
-            // 這種寫法和這段「txtNumber.Text = txtNumber.Text + "1";」是一樣的
-            */
+            Add_Number("1"); // 只需要呼叫Add_Number函式，並且設定參數為數字1
         }
 
         private void btnTwo_Click(object sender, EventArgs e)
         {
-            if (txtNumber.Text == "0") // 如果你的判斷式簡單到只有一行程式，可以把 { } 大刮號省略掉
-                txtNumber.Text = "";
-            txtNumber.Text = txtNumber.Text + "2";
+            Add_Number("2"); // 只需要呼叫Add_Number函式，並且設定參數為數字2
         }
 
         private void btnThree_Click(object sender, EventArgs e)
         {
-            if (txtNumber.Text == "0")
-                txtNumber.Text = "";
-            txtNumber.Text = txtNumber.Text + "3";
+            Add_Number("3"); // 只需要呼叫Add_Number函式，並且設定參數為數字3
         }
 
         private void btnFour_Click(object sender, EventArgs e)
         {
-            if (txtNumber.Text == "0")
-                txtNumber.Text = "";
-            txtNumber.Text = txtNumber.Text + "4";
+            Add_Number("4"); // 只需要呼叫Add_Number函式，並且設定參數為數字4
         }
 
         private void btnFive_Click(object sender, EventArgs e)
         {
-            if (txtNumber.Text == "0")
-                txtNumber.Text = "";
-            txtNumber.Text = txtNumber.Text + "5";
+            Add_Number("5"); // 只需要呼叫Add_Number函式，並且設定參數為數字5
         }
 
         private void btnSix_Click(object sender, EventArgs e)
         {
-            if (txtNumber.Text == "0")
-                txtNumber.Text = "";
-            txtNumber.Text = txtNumber.Text + "6";
+            Add_Number("6"); // 只需要呼叫Add_Number函式，並且設定參數為數字6
         }
 
         private void btnSeven_Click(object sender, EventArgs e)
         {
-            if (txtNumber.Text == "0")
-                txtNumber.Text = "";
-            txtNumber.Text = txtNumber.Text + "7";
+            Add_Number("7"); // 只需要呼叫Add_Number函式，並且設定參數為數字7
         }
 
         private void btnEight_Click_1(object sender, EventArgs e)
         {
-            if (txtNumber.Text == "0")
-                txtNumber.Text = "";
-            txtNumber.Text = txtNumber.Text + "8";
+            Add_Number("8"); // 只需要呼叫Add_Number函式，並且設定參數為數字8
         }
 
         private void btnNine_Click(object sender, EventArgs e)
         {
-            if (txtNumber.Text == "0")
-                txtNumber.Text = "";
-            txtNumber.Text = txtNumber.Text + "9";
+            Add_Number("9"); // 只需要呼叫Add_Number函式，並且設定參數為數字9
         }
 
         private void btnZero_Click(object sender, EventArgs e)
         {
+            Add_Number("0"); // 只需要呼叫Add_Number函式，並且設定參數為數字0
+        }
+
+        private void Add_Number(string _number)
+        {
             if (txtNumber.Text == "0")
                 txtNumber.Text = "";
-            txtNumber.Text = txtNumber.Text + "0";
+            txtNumber.Text = txtNumber.Text + _number;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -146,12 +119,12 @@ namespace Calculator
 
             //使用IndexOf() 方法的語法(方法一:老師寫法)：
             //要搜索的原始字串.IndexOf(要尋找的字串, 開始搜索的位置, 搜索結束的位置)
-            if (txtNumber.Text.IndexOf(".") == -1)  //IndexOf("."):有小數點就回傳小數點位置，沒有就回傳 -1(有索引概念)
+            if (txtNumber.Text.IndexOf(".") == -1)  //IndexOf("."):有小數點就回傳小數點位置，沒有就回傳 -1(有索引概念)(尋找)
                 txtNumber.Text = txtNumber.Text + ".";
 
             /*
             //使用Contains() 方法的語法(方法二)：
-            if (txtNumber.Text.Contains(".") == false)  //Text.Contains("."):有無小數點就回傳 True\Fluse
+            if (txtNumber.Text.Contains(".") == false)  //Text.Contains("."):有無小數點就回傳 True\Fluse(看)
             {
                 txtNumber.Text += txtNumber.Text + "."; 
             }
