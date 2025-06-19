@@ -46,7 +46,7 @@
             this.btnZero = new System.Windows.Forms.Button();
             this.btnEqual = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.btnPercent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -248,15 +248,16 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button1
+            // btnBack
             // 
-            this.button1.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(13, 279);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 85);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "<<";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBack.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnBack.Location = new System.Drawing.Point(13, 279);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(179, 85);
+            this.btnBack.TabIndex = 18;
+            this.btnBack.Text = "<<";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnPercent
             // 
@@ -275,7 +276,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 588);
             this.Controls.Add(this.btnPercent);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btnZero);
@@ -321,7 +322,7 @@
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.Button btnEqual;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnPercent;
     }
 }

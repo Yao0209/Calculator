@@ -189,6 +189,17 @@ namespace Calculator
             }
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if (txtNumber.Text.Length > 0)
+            {
+                txtNumber.Text = txtNumber.Text.Remove(txtNumber.Text.Length - 1);
+                if (txtNumber.Text.Length == 0)
+                {
+                    txtNumber.Text = "0";
+                }
+            }
+        }
 
         private void txtNumber_Click(object sender, EventArgs e)
         {
